@@ -8,6 +8,7 @@ export const theme = {
 			light: '#E6E8EC',
 			ghost: '#f5f5f5',
 			medium: '#929292',
+			mistyGray: '#CFCFD3',
 		},
 		text: {
 			secondary: '#141416',
