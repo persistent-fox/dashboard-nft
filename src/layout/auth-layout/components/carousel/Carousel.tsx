@@ -3,6 +3,8 @@ import 'react-alice-carousel/lib/alice-carousel.css';
 import { slidesData } from '../../../../mock/data';
 import styled from 'styled-components';
 import './../../../../styles/slider.css';
+import { Icon } from '../../../../components/icon/Icon';
+import { ButtonCarousel } from './button-carousel/ButtonCarousel';
 
 export const Carousel = () => {
 	const slides = slidesData.map(item => (
@@ -13,7 +15,26 @@ export const Carousel = () => {
 		</Slide>
 	));
 
-	return <AliceCarousel items={slides} disableDotsControls />;
+	return (
+		<AliceCarousel
+			items={slides}
+			renderPrevButton={({ isDisabled }) => {
+				return (
+					<ButtonCarousel isDisabled={isDisabled} typeBtn='prev'>
+						<Icon width='30' height='30' viewBox='0 0 30 30' iconId='arrow-slide' />
+					</ButtonCarousel>
+				);
+			}}
+			renderNextButton={({ isDisabled }) => {
+				return (
+					<ButtonCarousel isDisabled={isDisabled} typeBtn='next'>
+						<Icon width='30' height='30' viewBox='0 0 30 30' iconId='arrow-slide' />
+					</ButtonCarousel>
+				);
+			}}
+			disableDotsControls
+		/>
+	);
 };
 
 const Slide = styled.div`
@@ -45,4 +66,5 @@ const Description = styled.p`
 	font-size: 16px;
 	font-weight: 400;
 	color: ${props => props.theme.colors.text.gray.charcoal};
+	margin-bottom: 60px;
 `;
