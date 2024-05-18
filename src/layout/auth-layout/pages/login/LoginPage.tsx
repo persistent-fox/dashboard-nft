@@ -3,6 +3,7 @@ import { FlexWrapper } from '../../../../components/FlexWrapper';
 import { Button } from '../../../../components/button/Button';
 import { Icon } from '../../../../components/icon/Icon';
 import { Form } from './components/form/Form';
+import { Element } from './../../components/Element';
 import { S } from './LoginPage_Styles';
 
 export const LoginPage = () => {
@@ -18,7 +19,7 @@ export const LoginPage = () => {
 						<Icon width='27' height='31' viewBox='0 0 27 31' iconId='apple-login' />
 					</Button>
 				</FlexWrapper>
-				<S.Element>OR</S.Element>
+				<Element>OR</Element>
 				<Form />
 				<S.Text>
 					Create A New Account? <S.Link href='#'> Sign Up</S.Link>

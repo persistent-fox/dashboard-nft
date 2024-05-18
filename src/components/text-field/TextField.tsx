@@ -22,6 +22,7 @@ export const TextField = ({ placeholder, type, iconId, widthIcon, heightIcon, vi
 
 export const StyledTextField = styled.label`
 	position: relative;
+	width: 100%;
 	svg:first-child {
 		position: absolute;
 		top: 50%;

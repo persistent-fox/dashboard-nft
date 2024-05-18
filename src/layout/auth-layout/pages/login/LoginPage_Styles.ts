@@ -9,6 +9,7 @@ const LoginPage = styled.main`
 	width: 100%;
 	${FlexWrapper} {
 		button {
+			color: ${props => props.theme.colors.text.secondary};
 			width: 100%;
 		}
 	}
@@ -20,17 +21,6 @@ const Title = styled.h1`
 	font-weight: 600;
 	letter-spacing: -1.41px;
 	margin-bottom: 48px;
-`;
-
-const Element = styled.span`
-	display: block;
-	text-align: center;
-	color: rgba(50, 49, 66, 0.35);
-	font-size: 20px;
-	font-weight: 500;
-	letter-spacing: 0.6px;
-	text-transform: uppercase;
-	margin: 48px 0;
 `;
 
 const Text = styled.span`
@@ -47,4 +37,4 @@ const Link = styled.a`
 	font-weight: 700;
 `;
 
-export const S = { LoginPage, Title, Element, Text, Link };
+export const S = { LoginPage, Title, Text, Link };
