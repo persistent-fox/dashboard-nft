@@ -7,6 +7,7 @@ import { ResetPasswordPage } from './pages/reset-password/ResetPasswordPage';
 import { SetCodePage } from './pages/set-code/SetCodePage';
 import { SignUpPage } from './pages/sign-up/SignUpPage';
 import { VerifyEmailPage } from './pages/verify-email/VerifyEmailPage';
+import { VerifyIdentityPage } from './pages/verify-identity/VerifyIdentity';
 
 export const AuthLayout = () => {
 	return (
@@ -20,7 +21,8 @@ export const AuthLayout = () => {
 				{/* <VerifyEmailPage /> */}
 				{/* <ResetPasswordPage /> */}
 				{/* <SignUpPage /> */}
-				<SetCodePage />
+				{/* <SetCodePage /> */}
+				<VerifyIdentityPage />
 				<FlexWrapper justify='space-between'>
 					<S.Text>Privacy Policy</S.Text>
 					<S.Text>Copyright 2022</S.Text>
