@@ -4,6 +4,7 @@ import { S } from './AuthLayout_Styles';
 import { Carousel } from './components/carousel/Carousel';
 import { ForgetPasswordPage } from './pages/forget-password/ForgetPasswordPage';
 import { ResetPasswordPage } from './pages/reset-password/ResetPasswordPage';
+import { SetCodePage } from './pages/set-code/SetCodePage';
 import { SignUpPage } from './pages/sign-up/SignUpPage';
 import { VerifyEmailPage } from './pages/verify-email/VerifyEmailPage';
 
@@ -18,7 +19,8 @@ export const AuthLayout = () => {
 				{/* <ForgetPasswordPage /> */}
 				{/* <VerifyEmailPage /> */}
 				{/* <ResetPasswordPage /> */}
-				<SignUpPage />
+				{/* <SignUpPage /> */}
+				<SetCodePage />
 				<FlexWrapper justify='space-between'>
 					<S.Text>Privacy Policy</S.Text>
 					<S.Text>Copyright 2022</S.Text>
